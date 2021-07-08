@@ -1,0 +1,43 @@
+POST http://localhost:4000/api/auth/register
+Content-Type: application/json
+
+{
+    "username": "nahian",
+    "email": "nahian@gmail.com",
+    "password": "nahian123"
+}
+
+###
+
+POST http://localhost:4000/api/auth/jwt/create
+Content-Type: application/json
+
+{
+    "email": "sadek@gmail.com",
+    "password": "sadek123"
+}
+
+###
+POST http://localhost:4000/api/auth/jwt/create
+Content-Type: application/json
+
+{
+    "email": "nahian@gmail.com",
+    "password": "nahian123"
+}
+
+###
+POST http://localhost:4000/api/auth/token
+Content-Type: application/json
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MGUzMTRlNDA1MjViNDNhMTgwZTM5NDQiLCJpYXQiOjE2MjU0OTQ4NTV9.cMTVtV_kUugG2qrZlEOWjnv1IVMz5ao0ENlvV_Tnedk"
+}
+
+###
+POST http://localhost:4000/api/auth/jwt/verify
+Content-Type: application/json
+
+{
+    "token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MGUyZGM5YTc0YTU1ZTQzNTA5YjkyN2UiLCJpYXQiOjE2MjU1ODE1NDB9.ESOKW_zso5TkDuAyIWZzMvWY4rvNY2RGQ7UYvuyf7Zo"
+}
